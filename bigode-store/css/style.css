@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "lexend", sans-serif  
+}
+
+.header-section{
+    height: 100vh;
+    background-image: url(../img/banner.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    & header{
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 92px;
+        align-items: center;
+
+        & nav{
+            display: flex;
+            gap: 40px;
+
+            & a {
+              color: #EFEFEF;
+              font-size: 18px;
+            }
+        }
+
+        .btns{
+            display: flex;
+            gap: 16px;
+
+            & a{
+                padding: 11px 16px;
+                border-radius: 8px;
+                background-color: #3B44F6;
+                color: #EFEFEF;
+            }
+
+            & a:last-child{
+                background-color: transparent;
+                border: 1px solid #EFEFEF;
+            }
+        }
+    }
+
+    & #hero {
+        margin-top: 114px;
+        margin-left: 95px;
+        color: #EFEFEF;
+    }
+}
